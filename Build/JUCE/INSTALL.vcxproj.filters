@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\a48623a71d66f00800c6297ac0ed58fb\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C8406366-299C-3CAF-B299-1644B4F2F5A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

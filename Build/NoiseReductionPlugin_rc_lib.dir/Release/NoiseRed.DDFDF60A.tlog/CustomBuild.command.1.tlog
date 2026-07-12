@@ -1,0 +1,20 @@
+^C:\USERS\LEONA\DOCUMENTS\NOISEREDUCTIONPLUGIN\BUILD\CMAKEFILES\D2A471E7D763C695809EC7B6FBF8B5B8\NOISEREDUCTIONPLUGIN_RESOURCES.RC.RULE
+setlocal
+JUCE\tools\extras\Build\juceaide\juceaide_artefacts\Custom\juceaide.exe rcfile C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/JuceLibraryCode/Info.txt C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/JuceLibraryCode/NoiseReductionPlugin_resources.rc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LEONA\DOCUMENTS\NOISEREDUCTIONPLUGIN\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/leona/Documents/NoiseReductionPlugin -BC:/Users/leona/Documents/NoiseReductionPlugin/Build --check-stamp-file C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

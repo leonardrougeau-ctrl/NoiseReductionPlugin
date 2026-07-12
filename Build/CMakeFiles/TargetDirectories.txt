@@ -1,0 +1,14 @@
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/NoiseReductionPlugin.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/NoiseReductionPlugin_All.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/NoiseReductionPlugin_Standalone.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/NoiseReductionPlugin_rc_lib.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/NoiseReductionPlugin_VST3.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/NoiseReductionPlugin_vst3_helper.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/INSTALL.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/ALL_BUILD.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/JUCE/CMakeFiles/INSTALL.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/JUCE/CMakeFiles/ALL_BUILD.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/JUCE/modules/CMakeFiles/INSTALL.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/JUCE/extras/Build/CMakeFiles/INSTALL.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/JUCE/extras/Build/juceaide/CMakeFiles/INSTALL.dir

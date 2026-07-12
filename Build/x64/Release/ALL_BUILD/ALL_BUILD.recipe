@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\leona\Documents\NoiseReductionPlugin\Build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\Release\Standalone\Noise Reduction.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\leona\Documents\NoiseReductionPlugin\Build\x64\Release\NoiseReductionPlugin_vst3_helper</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\Release\VST3\Noise Reduction.vst3\Contents\x86_64-win\Noise Reduction.vst3</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\leona\Documents\NoiseReductionPlugin\Build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

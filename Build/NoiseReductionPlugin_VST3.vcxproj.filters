@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_ARA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_LV2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Standalone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Unity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\leona\Documents\NoiseReductionPlugin\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_rc_lib.dir\$(Configuration)\NoiseReductionPlugin_resources.res">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{8F681D77-DDEC-3FC5-9A7A-7B8B65E7FB20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B71C925D-39B8-3C64-9BC0-A177F1A5AEBF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

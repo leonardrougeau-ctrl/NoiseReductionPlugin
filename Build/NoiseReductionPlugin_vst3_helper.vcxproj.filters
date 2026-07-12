@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\22d5b0077fe617c69db46a485151e74c\NoiseReductionPlugin_vst3_helper.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\leona\Documents\NoiseReductionPlugin\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\NoiseReductionPlugin_vst3_helper" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C8406366-299C-3CAF-B299-1644B4F2F5A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

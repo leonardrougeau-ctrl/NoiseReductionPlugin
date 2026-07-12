@@ -1,0 +1,3 @@
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/vst3_helpers/NoiseReductionPlugin/CMakeFiles/vst3_helper.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/vst3_helpers/NoiseReductionPlugin/CMakeFiles/ALL_BUILD.dir
+C:/Users/leona/Documents/NoiseReductionPlugin/Build/vst3_helpers/NoiseReductionPlugin/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,1 @@
+C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_rc_lib.dir\Release\NoiseReductionPlugin_rc_lib.lib

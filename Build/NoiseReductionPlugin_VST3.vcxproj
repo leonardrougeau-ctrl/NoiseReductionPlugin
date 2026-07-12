@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB4B4226-9027-3DAB-951B-F9522BE30E22}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>NoiseReductionPlugin_VST3</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\Debug\VST3\Noise Reduction.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NoiseReductionPlugin_VST3.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Noise Reduction</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\Release\VST3\Noise Reduction.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NoiseReductionPlugin_VST3.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Noise Reduction</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\MinSizeRel\VST3\Noise Reduction.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">NoiseReductionPlugin_VST3.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Noise Reduction</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\RelWithDebInfo\VST3\Noise Reduction.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">NoiseReductionPlugin_VST3.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Noise Reduction</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;DEBUG=1;_DEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer="NoiseReduction";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Noise Reduction";JucePlugin_Desc="Noise Reduction";JucePlugin_Version=1.0.0;JucePlugin_VersionString="1.0.0";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted="Noise_ReductionAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID="com.noisereduction.noisereductionplugin.arafactory.1.0.0";JucePlugin_ARADocumentArchiveID="com.noisereduction.noisereductionplugin.aradocumentarchive.1";JucePlugin_ARACompatibleArchiveIDs="";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="Debug";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;DEBUG=1;_DEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer=\"NoiseReduction\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Noise Reduction\";JucePlugin_Desc=\"Noise Reduction\";JucePlugin_Version=1.0.0;JucePlugin_VersionString=\"1.0.0\";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted=\"Noise_ReductionAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID=\"com.noisereduction.noisereductionplugin.arafactory.1.0.0\";JucePlugin_ARADocumentArchiveID=\"com.noisereduction.noisereductionplugin.aradocumentarchive.1\";JucePlugin_ARACompatibleArchiveIDs=\"\";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"Debug\";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "removing moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E remove -f "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.vst3/Contents/moduleinfo.json" "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "creating C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.vst3/Contents/Resources"
+if %errorlevel% neq 0 goto :cmEnd
+vst3_helpers\NoiseReductionPlugin\vst3_helper.exe &gt; "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-Dsrc=C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.vst3" "-Ddest=C:\Program Files\Common Files/VST3" -P C:/Users/leona/Documents/JUCE/extras/Build/CMake/copyDir.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>NoiseReductionPlugin_artefacts\Debug\Noise Reduction_SharedCode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Debug/VST3/Noise Reduction.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer="NoiseReduction";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Noise Reduction";JucePlugin_Desc="Noise Reduction";JucePlugin_Version=1.0.0;JucePlugin_VersionString="1.0.0";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted="Noise_ReductionAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID="com.noisereduction.noisereductionplugin.arafactory.1.0.0";JucePlugin_ARADocumentArchiveID="com.noisereduction.noisereductionplugin.aradocumentarchive.1";JucePlugin_ARACompatibleArchiveIDs="";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="Release";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer=\"NoiseReduction\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Noise Reduction\";JucePlugin_Desc=\"Noise Reduction\";JucePlugin_Version=1.0.0;JucePlugin_VersionString=\"1.0.0\";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted=\"Noise_ReductionAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID=\"com.noisereduction.noisereductionplugin.arafactory.1.0.0\";JucePlugin_ARADocumentArchiveID=\"com.noisereduction.noisereductionplugin.aradocumentarchive.1\";JucePlugin_ARACompatibleArchiveIDs=\"\";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"Release\";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "removing moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E remove -f "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.vst3/Contents/moduleinfo.json" "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "creating C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.vst3/Contents/Resources"
+if %errorlevel% neq 0 goto :cmEnd
+vst3_helpers\NoiseReductionPlugin\vst3_helper.exe &gt; "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-Dsrc=C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.vst3" "-Ddest=C:\Program Files\Common Files/VST3" -P C:/Users/leona/Documents/JUCE/extras/Build/CMake/copyDir.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>NoiseReductionPlugin_artefacts\Release\Noise Reduction_SharedCode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/Release/VST3/Noise Reduction.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer="NoiseReduction";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Noise Reduction";JucePlugin_Desc="Noise Reduction";JucePlugin_Version=1.0.0;JucePlugin_VersionString="1.0.0";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted="Noise_ReductionAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID="com.noisereduction.noisereductionplugin.arafactory.1.0.0";JucePlugin_ARADocumentArchiveID="com.noisereduction.noisereductionplugin.aradocumentarchive.1";JucePlugin_ARACompatibleArchiveIDs="";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="MinSizeRel";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer=\"NoiseReduction\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Noise Reduction\";JucePlugin_Desc=\"Noise Reduction\";JucePlugin_Version=1.0.0;JucePlugin_VersionString=\"1.0.0\";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted=\"Noise_ReductionAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID=\"com.noisereduction.noisereductionplugin.arafactory.1.0.0\";JucePlugin_ARADocumentArchiveID=\"com.noisereduction.noisereductionplugin.aradocumentarchive.1\";JucePlugin_ARACompatibleArchiveIDs=\"\";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"MinSizeRel\";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "removing moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E remove -f "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.vst3/Contents/moduleinfo.json" "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "creating C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.vst3/Contents/Resources"
+if %errorlevel% neq 0 goto :cmEnd
+vst3_helpers\NoiseReductionPlugin\vst3_helper.exe &gt; "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-Dsrc=C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.vst3" "-Ddest=C:\Program Files\Common Files/VST3" -P C:/Users/leona/Documents/JUCE/extras/Build/CMake/copyDir.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>NoiseReductionPlugin_artefacts\MinSizeRel\Noise Reduction_SharedCode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/MinSizeRel/VST3/Noise Reduction.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer="NoiseReduction";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Noise Reduction";JucePlugin_Desc="Noise Reduction";JucePlugin_Version=1.0.0;JucePlugin_VersionString="1.0.0";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted="Noise_ReductionAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID="com.noisereduction.noisereductionplugin.arafactory.1.0.0";JucePlugin_ARADocumentArchiveID="com.noisereduction.noisereductionplugin.aradocumentarchive.1";JucePlugin_ARACompatibleArchiveIDs="";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="RelWithDebInfo";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4e737264;JucePlugin_Manufacturer=\"NoiseReduction\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x4e735264;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=0;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Noise Reduction\";JucePlugin_Desc=\"Noise Reduction\";JucePlugin_Version=1.0.0;JucePlugin_VersionString=\"1.0.0\";JucePlugin_VersionCode=0x10000;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aufx';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Noise_ReductionAU;JucePlugin_AUExportPrefixQuoted=\"Noise_ReductionAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXIdentifier=com.noisereduction.noisereductionplugin;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JucePlugin_Enable_ARA=0;JucePlugin_ARAFactoryID=\"com.noisereduction.noisereductionplugin.arafactory.1.0.0\";JucePlugin_ARADocumentArchiveID=\"com.noisereduction.noisereductionplugin.aradocumentarchive.1\";JucePlugin_ARACompatibleArchiveIDs=\"\";JucePlugin_ARAContentTypes=0;JucePlugin_ARATransformationFlags=0;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_DISPLAY_SPLASH_SCREEN=0;JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_MODULE_AVAILABLE_juce_dsp=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_LV2=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"RelWithDebInfo\";NoiseReductionPlugin_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode;C:\Users\leona\Documents\JUCE\modules;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\VST3_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lv2;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\serd;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sord\src;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\sratom;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv;C:\Users\leona\Documents\JUCE\modules\juce_audio_processors_headless\format_types\LV2_SDK\lilv\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>		</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "removing moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E remove -f "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.vst3/Contents/moduleinfo.json" "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "creating C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.vst3/Contents/Resources"
+if %errorlevel% neq 0 goto :cmEnd
+vst3_helpers\NoiseReductionPlugin\vst3_helper.exe &gt; "C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.vst3/Contents/Resources/moduleinfo.json"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-Dsrc=C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.vst3" "-Ddest=C:\Program Files\Common Files/VST3" -P C:/Users/leona/Documents/JUCE/extras/Build/CMake/copyDir.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>NoiseReductionPlugin_artefacts\RelWithDebInfo\Noise Reduction_SharedCode.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_plugin_client/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_extra/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_gui_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_graphics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_events/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_core/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_data_structures/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_processors_headless/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_basics/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_utils/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_formats/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_audio_devices/libs/VisualStudio2022/x64/MDd/$(Configuration);C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd;C:/Users/leona/Documents/JUCE/modules/juce_dsp/libs/VisualStudio2022/x64/MDd/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/leona/Documents/NoiseReductionPlugin/Build/NoiseReductionPlugin_artefacts/RelWithDebInfo/VST3/Noise Reduction.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\leona\Documents\NoiseReductionPlugin\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/leona/Documents/NoiseReductionPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/leona/Documents/NoiseReductionPlugin -BC:/Users/leona/Documents/NoiseReductionPlugin/Build --check-stamp-file C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/leona/Documents/NoiseReductionPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/leona/Documents/NoiseReductionPlugin -BC:/Users/leona/Documents/NoiseReductionPlugin/Build --check-stamp-file C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/leona/Documents/NoiseReductionPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/leona/Documents/NoiseReductionPlugin -BC:/Users/leona/Documents/NoiseReductionPlugin/Build --check-stamp-file C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/leona/Documents/NoiseReductionPlugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/leona/Documents/NoiseReductionPlugin -BC:/Users/leona/Documents/NoiseReductionPlugin/Build --check-stamp-file C:/Users/leona/Documents/NoiseReductionPlugin/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeRCCompiler.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\3.31.6-msvc6\CMakeSystem.cmake;C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX.cpp" />
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX_utils.cpp" />
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_ARA.cpp" />
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_LV2.cpp" />
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Standalone.cpp" />
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Unity.cpp" />
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST2.cpp" />
+    <ClCompile Include="C:\Users\leona\Documents\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST3.cpp" />
+    <Object Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_rc_lib.dir\$(Configuration)\NoiseReductionPlugin_resources.res" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\ZERO_CHECK.vcxproj">
+      <Project>{26CBC143-9E6B-325E-BA1B-49A61425AC46}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin.vcxproj">
+      <Project>{0C268E79-D129-3BC9-87BD-6F3367EBCC5F}</Project>
+      <Name>NoiseReductionPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_rc_lib.vcxproj">
+      <Project>{DDFDF60A-2EE0-3E11-92A9-E772B7B5090B}</Project>
+      <Name>NoiseReductionPlugin_rc_lib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_vst3_helper.vcxproj">
+      <Project>{95B52AB8-BB90-3721-B66A-D7AFB6281557}</Project>
+      <Name>NoiseReductionPlugin_vst3_helper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

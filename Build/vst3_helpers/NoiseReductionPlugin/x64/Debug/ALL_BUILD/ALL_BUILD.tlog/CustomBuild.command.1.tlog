@@ -1,0 +1,10 @@
+^C:\USERS\LEONA\DOCUMENTS\JUCE\EXTRAS\BUILD\CMAKE\JUCE_VST3_HELPER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/leona/Documents/JUCE/extras/Build/CMake/juce_vst3_helper -BC:/Users/leona/Documents/NoiseReductionPlugin/Build/vst3_helpers/NoiseReductionPlugin --check-stamp-file C:/Users/leona/Documents/NoiseReductionPlugin/Build/vst3_helpers/NoiseReductionPlugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

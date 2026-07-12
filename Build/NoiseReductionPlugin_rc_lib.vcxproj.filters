@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\CMakeFiles\d2a471e7d763c695809ec7b6fbf8b5b8\NoiseReductionPlugin_resources.rc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\leona\Documents\NoiseReductionPlugin\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\leona\Documents\NoiseReductionPlugin\Build\NoiseReductionPlugin_artefacts\JuceLibraryCode\NoiseReductionPlugin_resources.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C8406366-299C-3CAF-B299-1644B4F2F5A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B71C925D-39B8-3C64-9BC0-A177F1A5AEBF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
