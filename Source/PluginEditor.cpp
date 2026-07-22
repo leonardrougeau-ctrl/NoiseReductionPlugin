@@ -124,8 +124,23 @@ NoiseReductionProcessorEditor::NoiseReductionProcessorEditor (NoiseReductionProc
         audioProcessor.apvts, "inputGain", inputGainKnob);
 
     // --- Output Gain knob ---
-    configureKnob (outputGainKnob, outputGainLabel, "Output Gain", "x");
-    outputGainKnob.setTooltip ("Boost or cut the output signal after processing (0.0x to 2.0x)");
+    configureKnob (outputGainKnob, outputGainLabel, "Output Gain", " dB");
+    outputGainKnob.setTooltip ("Boost or cut the output signal after processing (0.0x to 2.0x, displayed in dB)");
+    outputGainKnob.textFromValueFunction = [](double value)
+    {
+        // Convert linear gain (0.0–2.0) to dB for display
+        // 0.0 → -∞, 0.5 → -6.0, 1.0 → 0.0, 2.0 → +6.0
+        if (value < 0.001)
+            return juce::String ("-∞ dB");
+        
+        double db = juce::Decibels::gainToDecibels (static_cast<float> (value));
+        return juce::String (db, 1) + " dB";
+    };
+    outputGainKnob.valueFromTextFunction = [](const juce::String& text)
+    {
+        // Parse dB string back to linear gain
+        return static_cast<double> (juce::Decibels::decibelsToGain (text.getFloatValue()));
+    };
     outputGainAttachment = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(
         audioProcessor.apvts, "outputGain", outputGainKnob);
 

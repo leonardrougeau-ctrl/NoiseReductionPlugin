@@ -89,9 +89,8 @@ void NoiseReductionProcessor::prepareToPlay (double sampleRate, int samplesPerBl
         outputReadPositions[ch] = 0;
     }
 
-    std::fill (noiseProfile.begin(), noiseProfile.end(), 0.0f);
+    // Clear FFT data buffer (not the noise profile — that persists across bypass/re-enable)
     std::fill (fftData.complexData.begin(), fftData.complexData.end(), 0.0f);
-    noiseProfileLearned.store (false);
     noiseProfileRequest.store (false);
     fftData.ready.store (false);
 
@@ -181,6 +180,22 @@ void NoiseReductionProcessor::processBlock (juce::AudioBuffer<float>& buffer,
     {
         for (int ch = 0; ch < totalNumOutputChannels; ++ch)
             buffer.applyGain (ch, 0, numSamples, outGain);
+    }
+
+    // Safety hard-clipper: prevent any samples from exceeding ±1.0
+    // Spectral subtraction's overlap-add IFFT can produce transient peaks
+    // that exceed 0 dBFS even with unity gain, due to phase cancellation
+    // and the double-Hann window reconstruction.
+    for (int ch = 0; ch < totalNumOutputChannels; ++ch)
+    {
+        auto* channelData = buffer.getWritePointer (ch);
+        for (int i = 0; i < numSamples; ++i)
+        {
+            if (channelData[i] > 1.0f)
+                channelData[i] = 1.0f;
+            else if (channelData[i] < -1.0f)
+                channelData[i] = -1.0f;
+        }
     }
 }
 
